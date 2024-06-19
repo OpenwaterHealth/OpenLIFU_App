@@ -7,21 +7,21 @@ This desktop application provides a graphical user interface for planning and co
 
 _This project is in active development and may change from version to version without notice,_
 
-## Features
-
-_List key features_
-
-
-## Table of content
+## Table of contents
 
 * [Features](#features)
-* [Maintainers](#maintainers)
+* [Development](#development)
+
+## Features
+
+* Empty list for now!
 
 
-## Maintainers
+## Development
 
 * [Contributing](CONTRIBUTING.md)
-* [Building](BUILD.md)
+* [Building on Windows](BUILD_WINDOWS.md)
+* [Building on Linux](BUILD_LINUX.md)
 
 
 ![OpenLIFU by Open Water Internet, Inc.](Applications/OpenLIFUApp/Resources/Images/LogoFull.png?raw=true)
