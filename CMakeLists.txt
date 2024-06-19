@@ -158,18 +158,18 @@ FetchContent_Populate(${extension_name}
 message(STATUS "Remote - ${extension_name} [OK]")
 list(APPEND Slicer_EXTENSION_SOURCE_DIRS ${${extension_name}_SOURCE_DIR}/Modules/Scripted/SlicerCustomAppUtilities)
 
-# SlicerOpenIGTLink
-#set(extension_name "SlicerOpenIGTLink")
-#set(${extension_name}_SOURCE_DIR "${CMAKE_BINARY_DIR}/${extension_name}")
-#FetchContent_Populate(${extension_name}
-#  SOURCE_DIR     ${${extension_name}_SOURCE_DIR}
-#  GIT_REPOSITORY ${EP_GIT_PROTOCOL}://github.com/openigtlink/SlicerOpenIGTLink.git
-#  GIT_TAG        2b92f7b1ffe02403109b671f28424e8770e902a0
-#  GIT_PROGRESS   1
-#  QUIET
-#  )
-#message(STATUS "Remote - ${extension_name} [OK]")
-#list(APPEND Slicer_EXTENSION_SOURCE_DIRS ${${extension_name}_SOURCE_DIR})
+# Bundle the SlicerOpenLIFU extension
+set(extension_name "SlicerOpenLIFU")
+set(${extension_name}_SOURCE_DIR "${CMAKE_BINARY_DIR}/${extension_name}")
+FetchContent_Populate(${extension_name}
+ SOURCE_DIR     ${${extension_name}_SOURCE_DIR}
+ GIT_REPOSITORY ${EP_GIT_PROTOCOL}://github.com/OpenwaterHealth/SlicerOpenLIFU.git
+ GIT_TAG        0ea13d4fd39937059085f51fd14f60e6eca81397
+ GIT_PROGRESS   1
+ QUIET
+ )
+message(STATUS "Remote - ${extension_name} [OK]")
+list(APPEND Slicer_EXTENSION_SOURCE_DIRS ${${extension_name}_SOURCE_DIR})
 
 
 # Add Slicer sources
