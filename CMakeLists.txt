@@ -37,7 +37,7 @@ set(Slicer_ORGANIZATION_DOMAIN "openwater.health")
 set(Slicer_ORGANIZATION_NAME   "Open Water Internet, Inc.")
 
 # Default home and favorite modules
-set(Slicer_DEFAULT_HOME_MODULE "Home")
+set(Slicer_DEFAULT_HOME_MODULE "OpenLIFUHome")
 set(Slicer_DEFAULT_FAVORITE_MODULES "Data, Volumes, Models, Transforms, Markups, SegmentEditor")
 
 # Configure SuperBuild
