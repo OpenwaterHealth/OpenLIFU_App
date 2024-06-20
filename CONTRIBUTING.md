@@ -6,7 +6,13 @@ There are many ways to contribute to OpenLIFU.
   * Submit a feature request or bug, or add to the discussion on the [OpenLIFU issue tracker][is]
   * Submit a [Pull Request][pr] to improve OpenLIFU.
 
-The PR Process, and Related Gotchas
+## Commit and pull request expectations
+
+- Every commit should reference the issue number with which it is associated.
+- Commits should be reasonably granular and semantically atomic.
+- Pull requests should not be squashed upon merging.
+
+The PR Process
 -----------------------------------
 
 #### How to submit a PR ?
@@ -28,7 +34,7 @@ and will facilitate other developers to checkout your topic without having to
 [configure a remote](https://help.github.com/articles/configuring-a-remote-for-a-fork/).
 It will also simplify the workflow when you are _co-developing_ a branch.
 
-When submitting a PR, make sure to add a `Cc: @OpenLIFU-app/developers` comment to
+When submitting a PR, make sure to add a `Cc: @OpenwaterHealth/openlifudevelopers` comment to
 notify OpenLIFU developers of your awesome contributions. Based on the
 comments posted by the reviewers, you may have to revisit your patches.
 
