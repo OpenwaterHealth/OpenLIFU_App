@@ -132,7 +132,7 @@ set(Slicer_QTSCRIPTEDMODULES_DISABLED
   Endoscopy
   LabelStatistics
   PerformanceTests
-  SampleData
+  # SampleData
   VectorToScalarVolume
   )
 
