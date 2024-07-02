@@ -13,7 +13,7 @@ ExternalProject_Add(${proj}
   BUILD_IN_SOURCE 1
   CONFIGURE_COMMAND ""
   BUILD_COMMAND ""
-  INSTALL_COMMAND ${PYTHON_EXECUTABLE} -m pip install -r ${OpenLIFU_SOURCE_DIR}/SuperBuild/requirements.txt
+  INSTALL_COMMAND ${PYTHON_EXECUTABLE} -m pip install -r ${SlicerOpenLIFU_SOURCE_DIR}/OpenLIFUHome/Resources/python-requirements.txt
   LOG_INSTALL 1
   DEPENDS
     ${${proj}_DEPENDENCIES}
