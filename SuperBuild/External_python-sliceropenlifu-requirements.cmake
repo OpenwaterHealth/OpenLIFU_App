@@ -1,4 +1,4 @@
-set(proj python-requirements)
+set(proj python-sliceropenlifu-requirements)
 
 # Set dependency list
 set(${proj}_DEPENDENCIES python python-pip)

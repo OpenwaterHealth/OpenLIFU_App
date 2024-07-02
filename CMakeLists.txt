@@ -171,8 +171,8 @@ FetchContent_Populate(${extension_name}
 message(STATUS "Remote - ${extension_name} [OK]")
 list(APPEND Slicer_EXTENSION_SOURCE_DIRS ${${extension_name}_SOURCE_DIR})
 
-# Add external python requirements
-list(APPEND Slicer_ADDITIONAL_DEPENDENCIES python-requirements)
+# Add python requirements for SlicerOpenLIFU
+list(APPEND Slicer_ADDITIONAL_DEPENDENCIES python-sliceropenlifu-requirements)
 
 # Add Slicer sources
 add_subdirectory(${slicersources_SOURCE_DIR} ${slicersources_BINARY_DIR})
