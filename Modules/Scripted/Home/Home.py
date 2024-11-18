@@ -33,6 +33,11 @@ class Home(ScriptedLoadableModule):
         self.parent.helpText += self.getDefaultModuleDocumentationLink()
         self.parent.acknowledgementText = """..."""  # replace with organization, grant and thanks.
 
+        # Force start guided mode once the styling and UI modifications are complete
+        def start_guided_mode():
+            openLIFUHomeLogic = slicer.util.getModuleLogic("OpenLIFUHome")
+            openLIFUHomeLogic.start_guided_mode()
+        slicer.app.connect("startupCompleted()", start_guided_mode)
 
 class HomeWidget(ScriptedLoadableModuleWidget, VTKObservationMixin):
     """Uses ScriptedLoadableModuleWidget base class, available at:
