@@ -1,7 +1,7 @@
 set(proj python-sliceropenlifu-requirements)
 
 # Set dependency list
-set(${proj}_DEPENDENCIES python python-pip)
+set(${proj}_DEPENDENCIES python python-pip python-numpy VTK)
 
 # Include dependent projects if any
 ExternalProject_Include_Dependencies(${proj} PROJECT_VAR proj DEPENDS_VAR ${proj}_DEPENDENCIES)
